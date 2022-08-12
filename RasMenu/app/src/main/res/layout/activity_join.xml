@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".Join.join">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="6dp"
+                android:src="@drawable/s"
+                android:contentDescription="TODO" />
+
+            <EditText
+                android:id="@+id/edfullName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/img1"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:drawableLeft="@drawable/person"
+                android:drawablePadding="10dp"
+                android:hint="full name"
+                android:inputType="textPersonName"
+                android:textSize="19sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/edUserName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/edfullName"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/note"
+                android:drawablePadding="10dp"
+                android:hint="User Name"
+                android:inputType="textPersonName"
+                android:textSize="19sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/edphone"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/edUserName"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="10dp"
+                android:hint="Phone No. 059..."
+                android:inputType="phone"
+                android:textSize="19sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/edDOB"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/edphone"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/calendar"
+                android:drawablePadding="10dp"
+                android:hint="Enter your date of birth ..."
+                android:inputType="date"
+                android:textSize="19sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/edpassword1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/edDOB"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="19sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/edpassword2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/edpassword1"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="10dp"
+                android:hint="password confirmation"
+                android:inputType="textPassword"
+                android:textSize="19sp"
+                android:textStyle="italic" />
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/edpassword2"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbmale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Male"
+                    android:textSize="19sp"
+                    android:textStyle="italic" />
+
+                <RadioButton
+                    android:id="@+id/rbfemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Female"
+                    android:textSize="19sp"
+                    android:textStyle="italic" />
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/spLocation"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/rg"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:entries="@array/countries"/>
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spLocation"
+                android:layout_margin="10dp"
+                android:layout_toLeftOf="@+id/submit"
+                android:layout_alignParentBottom="true"
+                android:text="Clear"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spLocation"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Submit"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>

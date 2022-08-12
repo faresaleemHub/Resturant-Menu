@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".sold_item_view">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img0"
+                android:layout_width="140dp"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="35dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="35dp"
+                android:layout_alignStart="@+id/Discription"
+                android:text="TextView"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Discription"
+                android:layout_width="209dp"
+                android:layout_height="83dp"
+                android:layout_below="@+id/Name"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img0"
+                android:layout_toRightOf="@+id/quantity"
+                android:width="100dp"
+                android:drawableLeft="@drawable/mony"
+                android:layout_marginLeft="15dp"
+                android:text="20"
+                android:layout_marginTop="-18dp"
+                android:layout_alignBottom="@+id/quantity"
+                android:textColor="#FF0000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="171dp"
+                android:layout_below="@+id/img0"
+                android:layout_marginEnd="10dp"
+                android:layout_alignBottom="@+id/price"
+                android:width="100dp"
+                android:drawableLeft="@drawable/shopingcar"
+                android:text="re\nstore"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img0"
+                android:layout_alignStart="@+id/img0"
+                android:layout_marginTop="-20dp"
+                android:layout_alignBottom="@+id/quantity"
+                android:gravity="center"
+                android:text="Quantity : "
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img0"
+                android:layout_toRightOf="@+id/q"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="-20dp"
+                android:text="1"
+                android:textColor="#00AE07"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

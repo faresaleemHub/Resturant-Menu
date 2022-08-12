@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ras.Menu</string>
+    <string-array name="countries">
+        <item>Gaza</item>
+        <item>Rafah</item>
+        <item>Khanyounes</item>
+        <item>Beat-Lahia</item>
+        <item>Al-Atatra</item>
+        <item>Dear-Al-Balah</item>
+    </string-array>
+</resources>
